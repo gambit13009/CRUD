@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Movie.destroy_all
 
 
 movies = Movie.create(title: "StarWars", release_year: 1977, director: "Geroges Lucas")
