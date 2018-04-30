@@ -1,16 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Remet à zéro toutes les entrées de la database précédement créées
+# Pour pouvoir remmetre à zéro les propres id des films et des directeurs, effectuer un
+# $ rails db:drop puis $ rails db:migrate
+
 Movie.destroy_all
+Director.destroy_all
+
+director = Director.create(first_name: "Georges", last_name: "Lucas")
+director = Director.create(first_name: "Brothers", last_name: "Wachowski")
+director = Director.create(first_name: "Peter", last_name: "Jackson")
+director = Director.create(first_name: "Quentin", last_name: "Tarantino")
+director = Director.create(first_name: "Steven", last_name: "Spielberg")
 
 
-movies = Movie.create(title: "StarWars", release_year: 1977, director: "Geroges Lucas")
-movies = Movie.create(title: "Matrix", release_year: 1999, director: "Wachowski brothers")
-movies = Movie.create(title: "Lordoftherings", release_year: 2001, director: "Peter Jackson")
-movies = Movie.create(title: "PulpFiction", release_year: 1994, director: "Quentin Tarantino")
-movies = Movie.create(title: "JurassicPark", release_year: 1993, director: "Steven Spielberg")
+movies = Movie.create(title: "StarWars", release_year: 1977, director_id: 1)
+movies = Movie.create(title: "Matrix", release_year: 1999, director_id: 2)
+movies = Movie.create(title: "Lordoftherings", release_year: 2001, director_id: 3)
+movies = Movie.create(title: "PulpFiction", release_year: 1994, director_id: 4)
+movies = Movie.create(title: "JurassicPark", release_year: 1993, director_id: 5)
 
