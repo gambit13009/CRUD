@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+5.times do |index|
+movies = Movie.create(title: "title(index)", release_year: "year(index)", director: "name(index)")
+end
