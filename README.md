@@ -3,7 +3,7 @@ Créations d'app Ruby on Rails mises en ligne avec Heroku
 
 
 
-![alt tag](images/img-marseille-3.png)
+
 
 -------------
 
@@ -23,7 +23,6 @@ Créations d'app Ruby on Rails mises en ligne avec Heroku
 
 ##Fait en pair programming
 
-![alt tag](images/pairProgramming.jpg)
 
 -------------
 
