@@ -25,7 +25,7 @@ Pour ce lundi 30 avril 2018 dans le cadre de l'approfondissement de Ruby on Rail
 
 Consignes d'utilisation
 
-Pour ouvrir chaque app et la tester il faut downloader le dossier, se placer dedans dans votre terinal et lancer en commande:
+Pour ouvrir chaque app et la tester il faut downloader le dossier, se placer dedans dans votre terminal et lancer en commande:
 
     $ bundle install --without production
 
