@@ -1,11 +1,15 @@
-BDonRails
+# BDonRails
+Créations d'app Ruby on Rails mises en ligne avec Heroku
 
-Création d'app Ruby on Rails mise en ligne avec Heroku
 
 
-Introduction : Présentation de l'équipe
-** WEST COAST MARSEILLE**
+![alt tag](images/img-marseille-3.png)
 
+-------------
+
+# Introduction : Présentation de l'équipe
+
+## ** WEST COAST MARSEILLE**
 ##- Audrey (@audreycouture)
 
 ##- Jerome (@Jerome)
@@ -14,58 +18,89 @@ Introduction : Présentation de l'équipe
 
 ##- Maxime (@Maxime)
 
-##- Sam (@sam)
+##- Sam 	(@sam)
+
 
 ##Fait en pair programming
 
+![alt tag](images/pairProgramming.jpg)
 
-But de l´exercice
+-------------
 
-Pour ce lundi 30 avril 2018 dans le cadre de l'approfondissement de Ruby on Rails, nous devions créer deux app mises en ligne avec heroku. 1_Movies 2_Gossips
+# But de l´exercice
 
-Consignes d'utilisation
+Pour ce lundi 30 avril 2018 dans le cadre de l'approfoncdissement de Ruby on Rails, nous devions créer deux app mises en ligne avec heroku. 
 
-Pour ouvrir chaque app et la tester il faut downloader le dossier, se placer dedans dans votre terminal et lancer en commande:
+1_Movies
 
-    $ bundle install --without production
+2_Gossips
+
+------------
+
+# Consignes d'utilisation
+
+## Tests en local:
+
+Pour ouvrir chaque app et la tester il faut downloader le dossier, se placer dedans dans votre terinal et lancer en commande:
+
+> $ bundle install --without production
+
 
 Pour voir la base données exécuter en commande un
 
-    $ rails db:migrate
+> $ rails db:migrate
 
 Puis tapez la commande suivante pour tester en local l'appli:
 
-    $ rails server
+> $ rails server
 
-Là vous pouver vous balader sur notre code.
+La vous pouver vous balader sur notre code.
 
-Puis ouvrir le fichier sqlite dans le dossier db de l'app, soit avec dbBrowser soit avec SqliteStudio ou autre et le visionner.
+Puis ouvrir le fichier sqlite dans le dossier db de l'app, soit avec dbBrowser soit avec SqliteStudio ou autre et visionner.
 
-Résultats
+## Test en ligne:
 
-    Exo en static complet
+Aller sur les liens Heroku suivants
 
-1.2.3.4. App rail contenant neufs pages:
+Movies:
 
-    localhost:3000 => Home en racine
-    localhost:3000/contact
-    localhost:3000/about
-    localhost:3000/about/team
-    localhost:3000/about/jerome
-    localhost:3000/about/damien
-    localhost:3000/about/audrey
-    localhost:3000/about/samir
-    localhost:3000/about/maxime
+> https://mighty-mountain-48122.herokuapp.com
 
-    Backend => complété jusqu'à 5.2 inclu (manque username et validations)
+Gossips:
 
-    model User avec username et bio
-    root page d'accueil
-    page de création d'utlisateur (post)
-    méthode new pour création d'utilisateur
-    formulaire HTML (username et bio)
-    redirection vers la page profil peronnalisée du user via l'id
-    validation du username
-    redirection vers une page d'erreur
+> https://peaceful-lowlands-20852.herokuapp.com
 
-Merci pour la correction !
+
+------------
+
+# Résultats
+1. Exo Movies complet
+- création de l'app Movie
+- création du modèle Movie
+- création du seed
+- création de l'index
+- création du model Director
+- association modèles Movie et Director
+
+
+
+2. Exo Gossip => complété jusqu'à 6.2 inclu (manque affichage des commentaires)
+- création du modèle Gossip
+- création de la page Home
+- création de la page New
+- création de la page Edit
+- création de la page Destroy
+- création de la page Index
+- création de validations du nom d'auteur
+##- rechargement de la page d'inscription en cas d'erreur
+- création du modèle Comment
+- association des modèles Comment et Gossip
+- Création de def index, new, create, update, edit et destroy dans le comments_controller
+
+
+
+
+
+
+
+Merci pour la correction ! 
