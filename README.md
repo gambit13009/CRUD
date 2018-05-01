@@ -2,7 +2,7 @@ BDonRails
 
 Création d'app Ruby on Rails mise en ligne avec Heroku
 
-alt tag
+
 Introduction : Présentation de l'équipe
 ** WEST COAST MARSEILLE**
 
@@ -18,7 +18,7 @@ Introduction : Présentation de l'équipe
 
 ##Fait en pair programming
 
-alt tag
+
 But de l´exercice
 
 Pour ce lundi 30 avril 2018 dans le cadre de l'approfondissement de Ruby on Rails, nous devions créer deux app mises en ligne avec heroku. 1_Movies 2_Gossips
